@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title = {courseDetailInfo.courseName}>
+        <div>
+            <ul>
+                <li> Course Fee: {courseDetailInfo.courseFee} </li>
+                <li> Course Duration: {courseDetailInfo.courseDuration} </li>
+            </ul>
+        </div>
+            <div slot="footer" >
+                {courseDetailInfo.courseRating}
+            </div>
+    </lightning-card>
+</template>

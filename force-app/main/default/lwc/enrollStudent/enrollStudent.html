@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title = {StudentInfo.fName}>
+        <lightning-button label ="Enroll" slot = "actions"></lightning-button>
+        <div class = "slds-p-horizontal_small">
+            <ul>
+                <li> Student FirstName : {StudentInfo.fName}</li>
+                <li> Student LastName : {StudentInfo.lName}</li>
+                <li> Student Age : {StudentInfo.age}</li>
+            </ul>
+        </div>
+        <div slot="footer" class = "slds-p-horizontal_small">
+            {StudentInfo.degree}
+        </div>
+    </lightning-card>
+</template>

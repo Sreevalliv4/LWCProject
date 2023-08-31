@@ -1,0 +1,10 @@
+<template>
+   <div>
+    <lightning-input value={courseName} label = "Please enter course name" type="string" ></lightning-input>
+    <lightning-input value={courseFee} label = "Please enter course fee" type="number" onchange={changeCourseFee}></lightning-input>
+    <lightning-input value={numberOfStudents} label="Please enter number of students" onchange={changeNumberOfStudents}></lightning-input>
+
+    <lightning-button variant ="brand" label="Total Course Fee" title="Total Course Fee" onclick={calculateTotal} ></lightning-button>
+    Total Course Fee : {totalCourseFee}
+  </div>
+</template>
